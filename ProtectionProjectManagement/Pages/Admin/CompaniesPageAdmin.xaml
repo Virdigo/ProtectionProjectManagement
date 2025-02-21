@@ -1,0 +1,29 @@
+﻿<Page x:Class="ProtectionProjectManagement.Pages.Admin.CompaniesPageAdmin"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ProtectionProjectManagement.Pages.Admin"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="CompaniesPageAdmin">
+
+    <Grid>
+        <ListView x:Name="CompanyListView" ItemsSource="{Binding Companies}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="ID" DisplayMemberBinding="{Binding CompanyID}" Width="50"/>
+                    <GridViewColumn Header="Название компании" DisplayMemberBinding="{Binding CompanyName}" Width="200"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10">
+            <Button Content="Добавление компании" Click="AddCompanyButton_Click" Margin="10"/>
+            <Button Content="Редактирование компании" Click="EditCompanyButton_Click" Margin="10"/>
+            <Button Content="Удаление компании" Click="DeleteCompanyButton_Click" Margin="10"/>
+            <Button Content="Обновить" Click="RefreshButton_Click" Margin="10"/>
+            <Button Content="Сотрудники" Click="EmployeesPageAdmin_Click" Margin="10"/>
+        </StackPanel>
+    </Grid>
+</Page>

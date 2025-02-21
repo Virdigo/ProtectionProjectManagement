@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="62d6c42aec684977b37fb1450c7728ba" Name="Diagram1">
+        <EntityTypeShape EntityType="ProtectionProjectManagementModel.Companies" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProtectionProjectManagementModel.Doljnosti" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProtectionProjectManagementModel.Employees" Width="1.5" PointX="3" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProtectionProjectManagementModel.Login" Width="1.5" PointX="5.25" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProtectionProjectManagementModel.Projects" Width="1.5" PointX="8.25" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProtectionProjectManagementModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProtectionProjectManagementModel.Tasks" Width="1.5" PointX="10.5" PointY="3.125" IsExpanded="true" />
+        <AssociationConnector Association="ProtectionProjectManagementModel.FK_Projects_Companies_CustomerCompanyID" ManuallyRouted="false" />
+        <AssociationConnector Association="ProtectionProjectManagementModel.FK_Login_Employees" ManuallyRouted="false" />
+        <AssociationConnector Association="ProtectionProjectManagementModel.FK_Projects_Employees_ProjectManagerID" ManuallyRouted="false" />
+        <AssociationConnector Association="ProtectionProjectManagementModel.FK_Tasks_Employees_PerformerID" ManuallyRouted="false" />
+        <AssociationConnector Association="ProtectionProjectManagementModel.FK_Tasks_Projects_ProjectID" ManuallyRouted="false" />
+        <AssociationConnector Association="ProtectionProjectManagementModel.DoljnostiEmployees" ManuallyRouted="false" />
+        <AssociationConnector Association="ProtectionProjectManagementModel.ProjectEmployees" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
